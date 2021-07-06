@@ -1,0 +1,13 @@
+<header class="header-2">
+  <div class="branding">
+    <a (click)="goHome()" class="nav-link cursorPointer">
+      <i class="fas fa-vote-yea" style="color: white"></i> &nbsp;&nbsp;&nbsp;
+      <span class="title">Iroha Voting</span>
+    </a>
+  </div>
+  <div class="header-actions" *ngIf="auth.isLoggedIn()">
+    <a (click)="auth.logout()" class="nav-link nav-text cursorPointer">
+      Log Out
+    </a>
+  </div>
+</header>

@@ -1,0 +1,26 @@
+<div style="text-align:center">
+    <h1>
+        Poll Results
+    </h1>
+    <div>
+        Party 01 votes: {{getAssetParty01}}
+        <br>
+        Party 02 votes: {{getAssetParty02}}
+    </div>
+
+    <br><br><br>
+    <div style="width: 100%;">
+        <div style=" position:block; top:60px; left:10px; width:500px; position: center; margin: auto;
+        margin-bottom: 1%;">
+            <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"></canvas>
+        </div>
+    </div> <br><br>
+
+    <div>
+        <button class="btn btn-primary" (click)="voteParty01()"> Vote for <strong> {{ party01Name }}
+            </strong></button>
+        <button class="btn btn-primary" (click)="voteParty02()"> Vote for <strong> {{ party02Name }}
+            </strong></button>
+    </div>
+
+</div>

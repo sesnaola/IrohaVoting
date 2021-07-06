@@ -1,0 +1,66 @@
+<div style="display: flex">
+  <!-- POLL 01 -->
+  <div class="card" style="margin: 3%; width: 20%; height: 10%;">
+    <div class="card-img">
+      <img src="../../../assets/Vote03.jpg">
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">Poll 01</h4>
+      <p class="card-text">
+        {{pollDescription}}
+      </p>
+    </div>
+
+    <div class="card-footer">
+      <a class="btn btn-sm btn-link" (click)="examplepoll01URL()">Details</a>
+      <button *ngIf="!disabledPoll01" class="btn btn-primary" (click)="subscribePoll()">Subscribe</button>
+      <button *ngIf="disabledPoll01" class="btn btn-danger" (click)="disableButtonPoll01()" disabled>Subscribe</button>
+    </div>
+    <div>
+      <!-- &nbsp; &nbsp; Number of votes: {{getAssetParty01 + getAssetParty02}} -->
+    </div>
+  </div>
+
+  <!-- POLL 02 -->
+  <div class="card" style="margin: 3%; width: 20%; height: 10%;">
+    <div class="card-img">
+      <img src="../../../assets/Vote03.jpg">
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">Poll 02</h4>
+      <p class="card-text">
+        {{pollDescription}}
+      </p>
+    </div>
+
+    <div class="card-footer">
+      <a class="btn btn-sm btn-link" (click)="examplepoll02URL()">Details</a>
+      <button *ngIf="!disabledPoll02" class="btn btn-primary" (click)="subscribePoll02()">Subscribe</button>
+      <button *ngIf="disabledPoll02" class="btn btn-danger" (click)="disableButtoPoll02()" disabled>Subscribe</button>
+    </div>
+    <div>
+      <!-- &nbsp; &nbsp; Number of votes: {{getAssetParty01 + getAssetParty02}} -->
+    </div>
+
+  </div>
+  <!-- POLL 03 -->
+  <div class="card" style="margin: 3%; width: 20%; height: 10%;">
+    <div class="card-img">
+      <img src="../../../assets/Vote03.jpg">
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">Poll 03</h4>
+      <p class="card-text">
+        {{pollDescription}}
+      </p>
+    </div>
+
+    <div class="card-footer">
+      <a class="btn btn-sm btn-link" (click)="examplepoll03URL()">Details</a>
+      <button *ngIf="!disabledPoll03" class="btn btn-primary" (click)="subscribePoll03()">Subscribe</button>
+      <button *ngIf="disabledPoll03" class="btn btn-danger" (click)="disableButtoPoll03()" disabled>Subscribe</button>
+    </div>
+    <div>
+      <!-- &nbsp; &nbsp; Number of votes: {{getAssetParty01 + getAssetParty02}} -->
+    </div>
+  </div>
